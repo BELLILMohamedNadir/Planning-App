@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph2"
+    app:startDestination="@id/planningFragment"
+    >
+
+    <fragment
+        android:id="@+id/planningFragment"
+        android:name="com.example.planning.fragments.PlanningFragment"
+        android:label="fragment_planning"
+        tools:layout="@layout/fragment_planning">
+        <action
+            android:id="@+id/action_planningFragment_to_noteFragment"
+            app:destination="@id/noteFragment" />
+        <action
+            android:id="@+id/action_planningFragment_to_profilFragment2"
+            app:destination="@id/profilFragment2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/noteFragment"
+        android:name="com.example.planning.fragments.NoteFragment"
+        android:label="fragment_note"
+        tools:layout="@layout/fragment_note">
+        <action
+            android:id="@+id/action_noteFragment_to_planningFragment"
+            app:destination="@id/planningFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profilFragment2"
+        android:name="com.example.planning.fragments.ProfilFragment"
+        android:label="fragment_profil"
+        tools:layout="@layout/fragment_profil" >
+        <action
+            android:id="@+id/action_profilFragment2_to_planningFragment"
+            app:destination="@id/planningFragment" />
+    </fragment>
+
+</navigation>

@@ -1,0 +1,43 @@
+[versions]
+adapterRxjava2 = "2.9.0"
+agp = "8.5.0"
+gson = "2.10.1"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+lifecycleExtensions = "2.0.0"
+lombok = "1.18.30"
+lombokVersion = "1.18.24"
+material = "1.12.0"
+navigationFragment = "2.8.7"
+navigationUi = "2.8.7"
+roomVersion = "2.4.3"
+rxandroid = "2.1.1"
+rxjava = "2.2.12"
+activity = "1.10.1"
+constraintlayout = "2.2.1"
+
+[libraries]
+adapter-rxjava2 = { module = "com.squareup.retrofit2:adapter-rxjava2", version.ref = "adapterRxjava2" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+lifecycle-extensions = { module = "androidx.lifecycle:lifecycle-extensions", version.ref = "lifecycleExtensions" }
+lombok = { module = "org.projectlombok:lombok", version.ref = "lombok" }
+lombok-v11824 = { module = "org.projectlombok:lombok", version.ref = "lombokVersion" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navigationFragment" }
+navigation-ui = { group = "androidx.navigation", name = "navigation-ui", version.ref = "navigationUi" }
+room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomVersion" }
+room-rxjava2 = { module = "androidx.room:room-rxjava2", version.ref = "roomVersion" }
+rxandroid = { module = "io.reactivex.rxjava2:rxandroid", version.ref = "rxandroid" }
+rxjava = { module = "io.reactivex.rxjava2:rxjava", version.ref = "rxjava" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+
